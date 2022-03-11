@@ -1,0 +1,219 @@
+/* project local css-file */
+
+@font-face {
+  font-family: 'TTWPGOTT';
+  src: local('O'), url('../fonts/TTWPGOTT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	//font-family: 'Conv_segoeuil';
+	font-family: 'TTWPGOTT';
+	font-size: 18px;
+	
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
+
+[help] {
+	cursor: help;
+}
+[help]:hover {
+	opacity: 0.7;
+}
+
+.tutorial-hide {
+	display: none!important;
+}
+
+.tutorial-active {
+	border-radius: 10px;
+}
+
+.tutorial-link {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-image: url(/static/img/guru.jpg);
+    width: 60px;
+    height: 60px;
+	background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+	border: 3px solid #d5ad51;
+    font-size: 80px;
+    line-height: 56px;
+    color: #d5ad51;
+    text-align: center;
+	cursor: pointer;
+	z-index: 1;
+}
+
+body.isMobile .tutorial-link {
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 32px;
+}
+
+.tutorial-link:hover {
+	opacity: 0.5;
+}
+
+.tutorial-link {
+	-webkit-animation: scale 1s infinite alternate;
+	-moz-animation: scale 1s infinite alternate;
+	-ms-animation: scale 1s infinite alternate;
+	-o-animation: scale 1s infinite alternate;
+	animation: scale 1s infinite alternate;
+}
+
+@-webkit-keyframes scale { from { transform: scale(1) } to { transform: scale(0.5) }}
+@-moz-keyframes scale { from { transform: scale(1) } to { transform: scale(0.8) }}
+@-ms-keyframes scale { from { transform: scale(1) } to { transform: scale(0.8) }}
+@-o-keyframes scale { from { transform: scale(1) } to { transform: scale(0.8) }}
+@keyframes scale { from { transform: scale(1) } to { transform: scale(0.8) }}
+
+.tutorial-link.tutorial-active {
+
+	-webkit-animation: tutorial_link_active 1s infinite alternate;
+	-moz-animation: tutorial_link_active 1s infinite alternate;
+	-ms-animation: tutorial_link_active 1s infinite alternate;
+	-o-animation: tutorial_link_active 1s infinite alternate;
+	animation: tutorial_link_active 1s infinite alternate;
+}
+
+@-webkit-keyframes tutorial_active { from { background-color: transparent; } to { background-color: #555; }}
+@-moz-keyframes tutorial_active { from { background-color: transparent; } to { background-color: #555; }}
+@-ms-keyframes tutorial_active { from { background-color: transparent; } to { background-color: #555; }}
+@-o-keyframes tutorial_active { from { background-color: transparent; } to { background-color: #555; }}
+@keyframes tutorial_active { from { background-color: transparent; } to { background-color: #555; }}
+
+@-webkit-keyframes tutorial_gui_active { from { border-color: black; } to { border-color: white; }}
+@-moz-keyframes tutorial_gui_active { from { border-color: black; } to { border-color: white; }}
+@-ms-keyframes tutorial_gui_active { from { border-color: black; } to { border-color: white; }}
+@-o-keyframes tutorial_gui_active { from { border-color: black; } to { border-color: white; }}
+@keyframes tutorial_gui_active { from { border-color: black; } to { border-color: white; }}
+
+@-webkit-keyframes tutorial_link_active {
+	from { border-color: #d5ad51; color: #d5ad51; }
+	to { border-color: white; color: white; }
+}
+@-moz-keyframes tutorial_link_active {
+	from { border-color: #d5ad51; color: #d5ad51; }
+	to { border-color: white; color: white; }
+}
+@-ms-keyframes tutorial_link_active {
+	from { border-color: #d5ad51; color: #d5ad51; }
+	to { border-color: white; color: white; }
+}
+@-o-keyframes tutorial_link_active {
+	from { border-color: #d5ad51; color: #d5ad51; }
+	to { border-color: white; color: white; }
+}
+@keyframes tutorial_link_active {
+	from { border-color: #d5ad51; color: #d5ad51; }
+	to { border-color: white; color: white; }
+}
+
+.rate[rate]:after {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	content:' ';
+    background-size: contain;
+    background-repeat: no-repeat;
+	background-image: url(/static/img/button3.png);
+	background-position: center;
+	text-align: center;
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #333;
+}
+
+.rate[rate="1"]:after { content: '1'; }
+.rate[rate="2"]:after { content: '2'; }
+.rate[rate="3"]:after { content: '3'; }
+.rate[rate="4"]:after { content: '4'; }
+.rate[rate="5"]:after { content: '5'; }
+.rate[rate="6"]:after { content: '6'; }
+.rate[rate="7"]:after { content: '7'; }
+.rate[rate="8"]:after { content: '8'; }
+.rate[rate="9"]:after { content: '9'; }
+.rate[rate="10"]:after { content: '10'; }
+
+.btn-close {
+	height: 36px;
+	width: 36px;
+	background-size: 36px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(/static/img/button1.png);
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	z-index: 10;
+	cursor: pointer;
+}
+.btn-close:after {
+	content: '';
+	position: absolute;
+	height: 34px;
+	width: 36px;
+	background-size: 24px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(/static/img/close1.png);
+}
+.btn-close:hover:after {
+	opacity: 0.5;
+}
+.notifyjs-arrow {
+	display: none!important;
+}
+
+.scroller {
+	background-color: #412c17;
+	border-radius: 4px;
+	width: 8px;
+	order: 1;
+	z-index: 2;
+	flex-shrink: 0;
+	position: relative;
+	margin-left: 5px;
+    margin-right: 7px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    //height: 90%;
+}
+.scroller > .handle {
+	position: absolute;
+	top: 0px;
+	width: 20px;
+	height: 20px;
+	margin-left: -6px;
+	margin-top: -5px;
+	background-image: url(/static/img/button1.png);
+	background-size: 20px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.scroll-content {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin-right: -90px!important;
+	padding-right: 70px!important;
+	height: 100%;
+	min-width: 100%;
+}
+body.isMobile .scroll-content {
+	margin-right: 0px!important;
+	padding-right: 0px!important;
+}

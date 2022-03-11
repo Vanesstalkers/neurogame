@@ -1,0 +1,242 @@
+
+		._85_ .tutorial-active {
+			-webkit-animation: tutorial_active 1s infinite alternate;
+			-moz-animation: tutorial_active 1s infinite alternate;
+			-ms-animation: tutorial_active 1s infinite alternate;
+			-o-animation: tutorial_active 1s infinite alternate;
+			animation: tutorial_active 1s infinite alternate;
+		}
+		
+		._85_ > .tutorial-link {
+			left: 340px;
+			top: 20px;
+			z-index: 10;
+		}
+		body.isMobile ._85_ > .tutorial-link {
+			left: 230px;
+		}
+	
+
+
+			._86_ {
+				position: absolute;
+				height: 100px;
+				width: 310px;
+				left: 60px;
+				top: 30px;
+				display: flex;
+				color: #018da8;
+				z-index: 1;
+				background-image: url(/static/img/panel7a.png);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: left;
+			}
+			body.isMobile ._86_ {
+				left: 20px;
+			}
+			._86_:before {
+				content: '';
+				position: absolute;
+				left: 20px;
+				top: 32px;
+				height: 32px;
+				width: 32px;
+				background-size: 32px;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			._86_.story:before {
+				background-image: url(/static/img/story.png);
+			}
+			._86_.idea:before {
+				background-image: url(/static/img/idea.png);
+			}
+		
+
+
+				._87_ {
+					white-space: pre-wrap;
+					margin: 0px;
+					padding-left: 70px;
+					width: 290px;
+					height: 70px;
+					padding-top: 28px;
+					text-align: center;
+					color: white;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-wrap: wrap;
+					font-size: 11px;
+					line-height: 14px;
+				}
+				._87_ > div {
+					width: 100%;
+				}
+			
+
+
+					._88_ {
+						position: absolute;
+						right: -140px;
+						top: 24px;
+						width: 100px;
+						height: 50px;
+					}
+					._88_ > button {
+						background: transparent;
+						border: none;
+						background-image: url(/static/img/button22.png);
+						width: 100%;
+						height: 100%;
+						background-repeat: no-repeat;
+						background-size: cover;
+						font-size: 12px;
+						color: white;
+						padding: 0px;
+						position: relative;
+					}
+					._88_ > button:hover {
+						opacity: 0.5;
+					}
+					body.isMobile ._88_ {
+						top: -30px;
+						right: 100px;
+					}
+				
+
+
+			._89_ {
+				height: 100%;
+				padding: 110px 60px 70px 60px;
+				max-height: 420px;
+			}
+			._89_ > .btn-close {
+				position: absolute;
+				color: #ddd;
+				width: auto;
+				height: auto;
+				opacity: 1;
+				font-weight: normal;
+				padding: 10px;
+				display: none;
+				cursor: pointer;
+				top: 100px;
+				right: 60px;
+				z-index: 2;
+				font-size: 0px;
+			}
+			._89_ > .btn-close:after {
+				top: 0px;
+				right: 0px;
+			}
+			._89_ > .btn-close.active {
+				display: block;
+			}
+			._89_ > .btn-close:hover {
+				opacity: 0.5;
+			}
+			._89_ > .tutorial-link {
+				left: 50%;
+				top: -40px;
+				font-size: 64px;
+				margin-left: -30px;
+			}
+		
+
+
+				._90_ {
+					display: flex;
+					width: 100%;
+					height: 150px;
+					overflow: auto;
+					padding-top: 20px;
+				}
+				body.isMobile ._90_ {
+					height: 100%;
+				}
+			
+
+
+							._91_ {
+								font-size: 14px;
+								width: 100%;
+								background: rgba(213, 173, 81, 1);
+								border-radius: 5px;
+							}
+							._91_ > .el {
+								height: 100%!important;
+								overflow: hidden;
+							}
+							._91_ > .el > textarea, ._91_ > .el > div[type=talabel] {
+								height: 100%!important;
+								border: none;
+								background: transparent;
+								color: white;
+								padding: 10px;
+								outline: none!important;
+							}
+						
+
+
+									._92_ {
+										position: absolute;
+										left: 0px;
+										font-size: 12px;
+										width: 100%;
+										height: 20px;
+										top: -20px;
+										padding: 0px;
+										text-align: right;
+										color: white;
+										padding-right: 15px;
+									}
+									body.isMobile ._92_ {
+										width: 100%;
+										text-align: center;
+										padding: 0px;
+										max-height: 30px;
+									}
+									._92_ > p {
+										margin: 0px;
+										color: #018da8;
+									}
+								
+
+
+				._93_ {
+					width: 100%;
+					margin-top: 10px;
+					height: 90px;
+					padding: 10px 70px;
+					background-image: url(/static/img/panel1.png);
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: bottom center;
+					display: flex;
+					flex-wrap: wrap;
+				}
+				body.isMobile ._93_ {
+					background-image: url(/static/img/panel5.png);
+					margin-left: -58px;
+					width: 360px;
+				}
+			
+
+
+							._94_ {
+								width: 30px;
+								height: 30px;
+								background-image: url(/static/img/button5.png);
+								background-size: contain;
+								background-repeat: no-repeat;
+								background-position: center;
+							}
+							._94_.v {
+								background-image: url(/static/img/button55.png);
+							}
+						
+
+
+

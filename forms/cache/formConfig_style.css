@@ -1,0 +1,108 @@
+
+		._1_ .tutorial-active {
+			-webkit-animation: tutorial_active 1s infinite alternate;
+			-moz-animation: tutorial_active 1s infinite alternate;
+			-ms-animation: tutorial_active 1s infinite alternate;
+			-o-animation: tutorial_active 1s infinite alternate;
+			animation: tutorial_active 1s infinite alternate;
+		}
+	
+
+
+			._2_ {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: 90px;
+				display: flex;
+				color: #018da8;
+			}
+			body.isMobile ._2_ {
+				height: 140px;
+			}
+		
+
+._3_ {
+				width: 100%;
+				color: #018da8;
+				display: flex;
+			
+}
+
+
+					._4_ {
+						width: 50%;
+						margin: auto;
+						text-align: center;
+						padding-top: 100px;
+						font-size: 18px;
+						color: #412c17;
+					}
+					._4_ > div {
+						font-size: 14px;
+						font-style: italic;
+						padding-top: 40px;
+					}
+				
+
+
+			._5_ {
+				height: 100%;
+				padding: 90px 10px 10px 10px;
+				display: flex;
+				flex-wrap: wrap;
+				color: #018da8;
+			}
+			body.isMobile ._5_ {
+				padding: 140px 0px 0px 0px;
+			}
+			._5_:after {
+				content: '';
+				width: 100%;
+				height: 100%;
+			}
+		
+
+
+				._6_ {
+					width: 100%;
+				}
+				._6_ > .field {
+					display: flex;
+					margin-bottom: 10px;
+				}
+				._6_ > .field > input {
+					text-align: center;
+					background: transparent;
+					border: 2px solid #018da8;
+				}
+				._6_ > .field > label {
+					width: 150px;
+					margin-right: 20px;
+					text-align: right;
+					font-weight: normal;
+				}
+				._6_ > .field > button {
+					background-color: #018da8;
+					border: none;
+					border-radius: 5px;
+					padding: 5px 40px;
+					margin-top: 10px;
+					color: #333;
+				}
+				body.theme-fantasy ._6_ {
+					color: #412c17;
+					font-size: 12px;
+				}
+				body.theme-fantasy ._6_ > .field > input {
+					border: 1px solid #412c17;
+				}
+				body.theme-fantasy ._6_ > .field > button {
+					background-color: #412c17;
+					color: #e8d5a2;
+				}
+			
+
+
+

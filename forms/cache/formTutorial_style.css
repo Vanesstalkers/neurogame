@@ -1,0 +1,154 @@
+
+		._102_ {
+			position: relative;
+			width: 100%;
+			font-size: 14px;
+			display: none;
+		}
+		._102_.active[currentTutorial] {
+			display: flex;
+		}
+		
+		._102_ > .controls {
+			position: absolute;
+			bottom: 6px;
+			left: 0px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		._102_ > .controls.big {
+			top: 100%;
+			flex-wrap: wrap;
+			margin-top: -40px;
+		}
+		._102_ > .controls > button {
+			color: #888;
+			border: 2px solid #888;
+			background-image: url(/XAOC/images/clear-black-back.png);
+			padding: 10px 20px;
+		}
+		._102_ > .controls.big > button {
+			width: 60%;
+		}
+		._102_ > .controls > button.active {
+			border-color: #d5ad51;
+			color: #d5ad51;
+		}
+		._102_ > .controls > button.active:hover {
+			color: white;
+		}
+	
+
+
+			._103_ {
+				position: absolute;
+				border-radius: 50%;
+				border: 3px solid #d5ad51;
+				right: 10px;
+				top: 10px;
+				width: 64px;
+			}
+			body.isMobileSmall ._103_ {
+				right: 10px;
+				top: 10px;
+				width: 64px;
+			}
+		
+
+
+			._104_ {
+				width: 100%;
+				margin: 30px;
+				min-height: 100px;
+				border: 2px solid #d5ad51;
+				background-image: url(/XAOC/images/clear-black-back.png);
+				padding: 20px;
+				padding-right: 60px;
+				white-space: pre-wrap;
+				color: #d5ad51;
+				overflow: hidden;
+				display: flex;
+			}
+			body.isMobile ._104_ {
+				min-height: 0px;
+			}
+			#tutorial.has-controls ._104_ {
+				padding-bottom: 30px;
+			}
+			body.isMobileSmall ._104_ {
+				font-size: 12px;
+				padding-right: 40px;
+			}
+			._104_ > .typed-cursor {
+				display: none!important;
+			}
+			._104_ > .text {
+				width: 100%;
+			}
+			._104_ > .img {
+				width: 60px;
+				background-size: contain;
+				flex-shrink: 0;
+				background-repeat: no-repeat;
+				background-position: center;
+				margin-right: 20px;
+				display: none;				
+			}
+			body.isMobileSmall ._104_ > .img {
+				width: 40px;
+			}
+			._104_ > .img.active {
+				display: block;
+			}
+		
+
+#subFormTutorial {
+		position: fixed;
+		z-index: 100;
+	}
+	body.isMobile #subFormTutorial {
+		max-width: 100%;
+	}
+	#subFormTutorial > #tutorial {
+		width: 600px;
+	}
+	body.isMobile #subFormTutorial > #tutorial {
+		max-width: 100%;
+	}
+	#subFormTutorial[tutorialPosition=topLeft] {
+		top: 0px;
+		left: 0px;
+	}
+	#subFormTutorial[tutorialPosition=bottomLeft] {
+		bottom: 0px;
+		left: 0px;
+	}
+	#subFormTutorial[tutorialPosition=bottomRight] {
+		bottom: 0px;
+		right: 0px;
+	}
+	#subFormTutorial[tutorialPosition=topRight] {
+		top: 0px;
+		right: 0px;
+	}
+	#subFormTutorial[tutorialPosition=topLeft] > #tutorial > .guru {
+		left: 10px;
+		right: initial;
+	}
+	#subFormTutorial[tutorialPosition=bottomLeft] > #tutorial > .guru {
+		left: 10px;
+		right: initial;
+	}
+	#subFormTutorial[tutorialPosition=topLeft] > #tutorial > .content {
+		padding-left: 60px;
+		padding-right: 10px;
+	}
+	#subFormTutorial[tutorialPosition=bottomLeft] > #tutorial > .content {
+		padding-left: 60px;
+		padding-right: 10px;
+	}
+	body.isMobile #subFormTutorial[tutorialPosition=bottomLeft] > #tutorial > .content {
+		padding-left: 40px;
+	}
+
